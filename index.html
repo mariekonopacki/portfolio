@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marie Konopacki</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="entire-background">
+    <div class="blobs">
+        <div class="blob-overlay">
+            <div id="b1" class="blob2" style="width:410px;height:410px"></div>
+            <div id="b2" class="blob2" style="width:360px;height:360px"></div>
+            <div id="b3" class="blob2" style="width:300px;height:300px"></div>
+            <div id="b4" class="blob2" style="width:240px;height:250px"></div>
+            <div id="b5" class="blob2" style="width:220px;height:220px"></div>
+            <div id="b6" class="blob2" style="width:170px;height:180px"></div>
+            <div id="b7" class="blob2" style="width:160px;height:160px"></div>
+            <div id="b8" class="blob2" style="width:80px;height:80px"></div>
+        </div>
+    </div>
+
+    <div class="background-cover"></div>
+
+    <div class="background-overlay">
+        <svg class="homepage-background" preserveAspectRatio="none" viewBox="0 0 300 200">
+            <g mask="url(#homepage-mask)">
+                <rect fill="var(--homepage)" width="100%" height="100%" x="0" y="0"/>
+                <g class="lines">
+                    <path id="l1" class="line" d="M191.408,-15.014 C203.608,18.009 242.197,-28.988 276.444,-17.654 319.343,3.675 265.248,72.399 327.811,87.823 "/>
+                    <path id="l2" class="line alt" d="M175.753,-6.697 C171.79,47.326 236.43,3.83 268.329,24.747 301.3,46.336 269.259,112.951 342.533,83.99  "/>
+                    <path id="l3" class="line" d="M110.1,-26.902 C105.997,75.219 207.262,-6.423 247.229,16.874 291.124,42.462 239.405,149.863 314.354,124.774 "/>
+                    <path id="l4" class="line alt" d="M75.001,-0.982 C75.231,76.924 156.156,30.896 210.604,48.043 281.928,70.504 239.152,159.395 301.091,151.514 "/>
+                    <path id="l5" class="line" d="M70.461,-0.703 C70.46,85.464 162.521,32.436 213.399,54.954 284.655,89.125 215.166,169.88 327.937,141.382 "/>
+                    <path id="l6" class="line alt" d="M70.332,-1.409 C69.015,101.225 185.682,52.002 220.227,70.578 260.849,92.422 228.915,153.518 300,146.708 "/>
+                    <path id="l7" class="line" d="M30.064,-1.54 C30.064,98.455 154.814,77.279 197.058,98.279 237.021,118.138 210,190 300,190 " />
+                    <path id="l8" class="line alt" d="M0,0    C  0,100 100,75 150,100   C 200,125 200,200 300,200" />
+                    <path id="l9" class="line" d="M20,0 C20,100 95.801,86.305 150,100 212.379,115.761 200,200 300,200 " />
+                </g>
+            </g>
+            <mask id="homepage-mask">
+                <path id="mask-path" fill="white" d="M210,0 C210, 100 230,100 230,200 L 0,200 L 0,0 z"/>
+            </mask>
+        </svg>
+    </div>
+
+    <div class="down-arrow" onclick="scrollDown()"></div>
+
+
+    <div class="navbar">
+        <ul>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Illustrations</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="scroll-parent">
+    <div class="page page-1" id="page-1">
+        <div class="homepage">
+            <div class="homepage-text">
+                <div class="greeting"><span>Hello!</span></div>
+                <div class="marie">I'm Marie Konopacki.</div>
+                <div class="description">
+                    <p>Quarantined college student, puzzle enthusiast,
+                    frequent MacGyver-er, seasoned napper,
+                        and aspiring grill master.</p>
+                    <p class="emphasis">But mostly an artist, designer, and developer.</p>
+                </div>
+                <div class="buttons">
+                    <a href="https://www.linkedin.com/in/mariekonopacki/" target="_blank">
+                        <div class="linkedin-button"></div>
+                    </a>
+                    <a href="mailto:konopackimarie@gmail.com" target="_blank">
+                        <div class="email-button"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page-2" id="page-2">
+        <div class="project-grid">
+            <div class="list-wrapper">
+                <svg class="list-background" preserveAspectRatio="none" viewBox="0 0 300 200">
+                    <path id="list-path" fill="var(--lighthomepage)" d="M210,0 C210, 100 230,100 230,200 L 0,200 L 0,0 z"/>
+                </svg>
+                <div class="page-title">Projects</div>
+                <div class="project-list">
+                    <div id="olympics" class="project selected" onclick="updateSelected(this)">
+                        <div class="project-text">
+                            <h1 class="project-title">Visualizing Accessibility in the Olympics</h1>
+                            <div class="project-description">Analysis of diversity and inequality of athletes and countries using decades of data</div>
+                            <div class="project-tags">
+                                <span class="tag">Data Visualization</span>
+                                <span class="tag">Web Dev</span>
+                                <span class="tag">Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fashion" class="project" onclick="updateSelected(this)">
+                        <div class="project-text">
+                            <h1 class="project-title">Fashion Scholarship Fund Case Study</h1>
+                            <div class="project-description">Scholarship-winning proposal of sustainable clothing made affordable by bundling foundation pieces</div>
+                            <div class="project-tags">
+                                <span class="tag">Design</span>
+                                <span class="tag">Marketing</span>
+                                <span class="tag">Product</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ai-explorer" class="project" onclick="updateSelected(this)">
+                        <div class="project-text">
+                            <h1 class="project-title">AI Explorer @ the Harvard Art Museums</h1>
+                            <div class="project-description">A web-app that shows how artificial intelligence interprets art in the museum's collection</div>
+                            <div class="project-tags">
+                                <span class="tag">Web Dev</span>
+                                <span class="tag">Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="novel-art" class="project" onclick="updateSelected(this)">
+                        <div class="project-text">
+                            <h1 class="project-title">Text Visualizer: Novels to Pixel Art</h1>
+                            <div class="project-description">A program that locates colors within raw text and transforms it into visual representation</div>
+                            <div class="project-tags">
+                                <span class="tag">Digital Humanities</span>
+                                <span class="tag">Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="spirograph" class="project" onclick="updateSelected(this)">
+                        <div class="project-text">
+                            <h1 class="project-title">Spirograph Robot</h1>
+                            <div class="project-description">A wooden kinetic sculpture that uses a rotational motor to draw a spiral design</div>
+                            <div class="project-tags">
+                                <span class="tag">Engineering</span>
+                                <span class="tag">Laser Cutting</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="piano-lamp" class="project" onclick="updateSelected(this)">
+                        <div class="project-text">
+                            <h1 class="project-title">Piano Lamp</h1>
+                            <div class="project-description">A lamp connected to WiFi that retrieves and plays piano tunes sent over a Firebase web server</div>
+                            <div class="project-tags">
+                                <span class="tag">Engineering</span>
+                                <span class="tag">Programming</span>
+                                <span class="tag">Arduino</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-display"></div>
+        </div>
+    </div>
+
+    <div class="page page-3">
+        <div class="page-title illustration-title">Illustrations</div>
+        <div class="illustration-page">
+            <div class="illustration-container">
+                <div class="illustration">
+                    <img loading="lazy" class="illustration-img" alt="Harvard Lampoon Issue Cover" src="assets/illustrations/travel-guide.jpeg"/>
+                    <div class="illustration-text">
+                        <h1 class="project-title">Harvard Lampoon Issue Cover</h1>
+                        <div class="project-description">
+                            The Summer 2019 cover illustration for the oldest comedy magazine in the country
+                        </div>
+                    </div>
+                </div>
+                <div class="illustration">
+                    <img loading="lazy" class="illustration-img" alt="Hasty Pudding Theatricals Show Poster" src="assets/illustrations/mean-ghouls.jpeg"/>
+                    <div class="illustration-text">
+                        <h1 class="project-title">Harvard Pudding Theatricals Poster</h1>
+                        <div class="project-description">
+                            The 2020 show poster for the oldest theatrical group in the country
+                        </div>
+                    </div>
+                </div>
+                <div class="illustration">
+                    <img loading="lazy" class="painting-img" alt="Abstract Painting - Untitled 2020" src="assets/art/painting3.png" />
+                    <div class="painting-caption">Untitled, 2020. Acrylic. 30 x 40 in.</div>
+                </div>
+                <div class="illustration">
+                    <img loading="lazy" class="painting-img" alt="Abstract Painting - Untitled 2020" src="assets/art/painting2.png" />
+                    <div class="painting-caption">Untitled, 2020. Acrylic. 16 x 40 in.</div>
+                </div>
+                <div class="illustration">
+                    <img loading="lazy" class="painting-img" alt="Abstract Painting - Untitled 2020" src="assets/art/painting-1.png" />
+                    <div class="painting-caption">Untitled, 2020. Acrylic. 16 x 40 in.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page page-4" id="page-4">
+        <div class="about-me">
+            <div class="about-me-title">
+                <div class="page-title"><span>About</span> <br/>Marie Konopacki</div>
+            </div>
+            <div class="about-me-photo-container">
+                <img class="about-me-photo" src="assets/measbaby.jpg"/>
+                <div class="painting-caption">Even at 2 years old, I had an eye for design...</div>
+            </div>
+            <div class="about-me-text">
+                <svg class="about-lines-container" preserveAspectRatio="none" viewBox="0 0 196 221">
+                    <g class="about-lines" >
+                        <path class="st0" d="M184.52,17.51c18.24,17.16,4.73,39.56,4.94,117.27c0.12,45.11,9.49,57.29-2.12,70.48
+    c-10.67,12.12-29.68,11.8-67.25,12.11c-50.81,0.42-76.21,0.67-86.01-12.11c-23.24-30.32,21.2-108.65,4.1-132.7
+    c-4.39-6.18-11.62-8.69-17.31-10.12c-3.73-0.94-8.08-1.39-8.08-1.39c-2.07-0.22-3.35-0.26-3.35-0.26s14.89,2.57,24.14-4.34
+    c14.65-10.94-1.31-37.76,11.3-51.56c8.41-9.2,23.33-2.91,58.24,2.4C164.79,16.67,172.38,6.09,184.52,17.51z"/>
+                        <path class="st0" d="M39.74,89.19c-0.79-5.64-2.39-13.32-8.34-19.18C20.01,58.78,0.15,60.8,0.2,59.88
+    c0.05-0.95,20.58,4.46,30.91-4.72c12.91-11.48-3.19-34.08,7.78-47.76c11.03-13.76,31.39,3.97,89.4,1.46
+    c20.68-0.9,43.82-4.27,52.86,8.83c1.62,2.35,2.25,4.55,2.94,6.89c2.64,8.85,1.06,18.96,2.19,53.62
+    c2.59,79.48,17.37,99.04,1.42,118.8c-12.11,15-31.77,16.97-67.61,20.39c-36.34,3.47-73.2,6.98-86.01-12.11
+    C18.17,181.57,45.84,132.87,39.74,89.19z"/>
+                    </g>
+                </svg>
+                <div class="about-me-description">
+                    <p>I'm a senior at Harvard University studying Art, Film, & Visual Studies, with a secondary in Computer Science. As an artist, coder, and designer, I'm interested in how people interact with what they use every day, and I seek to foster inclusion through design.</p>
+                    <p>Throughout my life, I've witnessed most of my family—none of whom have gone to college and most of whom do not speak English—struggle with using things not designed for them, which has led to my desire to focus on accessibility and diversity when creating.</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-me-background"></div>
+        <div class="contact-me-text">
+    <!--        <div class="skills">-->
+    <!--            <div class="skill-title">Design</div>-->
+    <!--            <div class="skills-list">-->
+    <!--                <span>Photoshop </span><span>Illustrator </span>-->
+    <!--                <span>InDesign </span><span>Figma </span>-->
+    <!--                <span>Sketch </span><span>Tableau </span>-->
+    <!--            </div>-->
+    <!--            <div class="skill-title">Development</div>-->
+    <!--            <div class="skills-list">-->
+    <!--                <span>CSS/HTML </span><span>Javascript </span>-->
+    <!--                <span>D3 </span><span>jQuery </span>-->
+    <!--                <span>Node.js </span><span>React </span>-->
+    <!--                <span>Python </span><span>C++ </span>-->
+    <!--                <span>SQL </span>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class="resume">Download resume</div>-->
+            <div class="thanks">Thanks for reading—<br/>hope to chat soon! </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+<script src="js/DrawSVGPlugin.min.js"></script>
+<script src="js/MorphSVGPlugin.min.js"></script>
+<script src="js/TextPlugin.min.js"></script>
+<script src="js/GSDevTools.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.4/pdfobject.min.js" integrity="sha512-mW7siBAOOJTkMl77cTke1Krn+Wz8DJrjMzlKaorrGeGecq0DPUq28KgMrX060xQQOGjcl7MSSep+/1FOprNltw==" crossorigin="anonymous"></script>
+<script src="projectDescriptions.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>

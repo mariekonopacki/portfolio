@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>Marie Konopacki</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+
+<div class="animated-background">
+    <div class="blobs">
+        <div class="blob-overlay">
+            <div id="b1" class="blob" style="width:410px;height:410px"></div>
+            <div id="b2" class="blob" style="width:360px;height:360px"></div>
+            <div id="b3" class="blob" style="width:300px;height:300px"></div>
+            <div id="b4" class="blob" style="width:240px;height:250px"></div>
+            <div id="b5" class="blob" style="width:220px;height:220px"></div>
+            <div id="b6" class="blob" style="width:170px;height:180px"></div>
+            <div id="b7" class="blob" style="width:160px;height:160px"></div>
+            <div id="b8" class="blob" style="width:80px;height:80px"></div>
+        </div>
+    </div>
+
+    <div class="background-overlay">
+        <svg class="homepage-background" preserveAspectRatio="none" viewBox="0 0 300 200">
+            <g mask="url(#homepage-mask)">
+                <rect id="overlay-color-rect" fill="#5d00e0" width="100%" height="100%" x="0" y="0"/>
+                <g class="lines">
+                    <path id="l1" class="line" d="M191.408,-15.014 C203.608,18.009 242.197,-28.988 276.444,-17.654 319.343,3.675 265.248,72.399 327.811,87.823 "/>
+                    <path id="l2" class="line alt" d="M175.753,-6.697 C171.79,47.326 236.43,3.83 268.329,24.747 301.3,46.336 269.259,112.951 342.533,83.99  "/>
+                    <path id="l3" class="line" d="M110.1,-26.902 C105.997,75.219 207.262,-6.423 247.229,16.874 291.124,42.462 239.405,149.863 314.354,124.774 "/>
+                    <path id="l4" class="line alt" d="M75.001,-0.982 C75.231,76.924 156.156,30.896 210.604,48.043 281.928,70.504 239.152,159.395 301.091,151.514 "/>
+                    <path id="l5" class="line" d="M70.461,-0.703 C70.46,85.464 162.521,32.436 213.399,54.954 284.655,89.125 215.166,169.88 327.937,141.382 "/>
+                    <path id="l6" class="line alt" d="M70.332,-1.409 C69.015,101.225 185.682,52.002 220.227,70.578 260.849,92.422 228.915,153.518 300,146.708 "/>
+                    <path id="l7" class="line" d="M30.064,-1.54 C30.064,98.455 154.814,77.279 197.058,98.279 237.021,118.138 210,190 300,190 " />
+                    <path id="l8" class="line alt" d="M0,0    C  0,100 100,75 150,100   C 200,125 200,200 300,200" />
+                    <path id="l9" class="line" d="M20,0 C20,100 95.801,86.305 150,100 212.379,115.761 200,200 300,200 " />
+                </g>
+            </g>
+            <mask id="homepage-mask">
+                <path id="mask-path" fill="white" d="M210,0 C210, 100 230,100 230,200 L 0,200 L 0,0 z"/>
+            </mask>
+        </svg>
+    </div>
+</div>
+<div class="down-arrow" onclick="scroll2()"></div>
+
+
+<div class="navbar">
+    <ul>
+        <li><a onclick="scroll1()">Home</a></li>
+        <li><a onclick="scroll2()">Projects</a></li>
+        <li><a onclick="scroll3()">Illustrations</a></li>
+        <li><a onclick="scroll4()">About</a></li>
+    </ul>
+</div>
+
+<div class="page-scroll">
+    <!--  Homepage  -->
+    <section class="page" id="page-1">
+        <div class="homepage-content">
+            <div class="greeting"><span>Hello!</span></div>
+            <div class="marie">I'm Marie Konopacki.</div>
+            <div class="description">
+                <p>Graduating college senior, puzzle enthusiast,
+                    resident handywoman, seasoned napper,
+                    and aspiring grill master.</p>
+                <p class="emphasis">But mostly an artist, designer, and developer.</p>
+            </div>
+            <div class="buttons">
+                <a href="mailto:konopackimarie@gmail.com" class="button" target="_blank">Email</a>
+                <a href="https://www.linkedin.com/in/mariekonopacki/" class="button" target="_blank">LinkedIn</a>
+                <a href="https://drive.google.com/file/d/0B2OApd_3IBgvMlktMUlsNmhZN3c/view?usp=sharing" class="button" target="_blank">Resume</a>
+            </div>
+        </div>
+    </section>
+    <section class="page" id="page-2">
+        <div class="project-grid">
+            <div class="list-wrapper">
+                <div class="page-title project-page-title">Projects</div>
+                <div class="project-list">
+                    <div id="olympics" class="project selected" onclick="updateSelected(this)">
+                        <div class="project-text">
+                            <h1 class="project-title">Accessibility of the Olympics</h1>
+                            <div class="project-description">Analysis of diversity and inequality of athletes and their countries over time</div>
+                            <div class="project-tags">Data Visualization - Web Dev</div>
+                        </div>
+                    </div>
+                    <div id="fashion" class="project" onclick="updateSelected(this)">
+                        <div class="project-text">
+                            <h1 class="project-title">Philosophy Box</h1>
+                            <div class="project-description">Scholarship-winning proposal of sustainable fashion made affordable</div>
+                            <div class="project-tags">Product Design</div>
+                        </div>
+                    </div>
+                    <div id="ai-explorer" class="project" onclick="updateSelected(this)">
+                        <div class="project-text">
+                            <h1 class="project-title">A.I. Explorer</h1>
+                            <div class="project-description">Exploratory web-app demonstrating how artificial intelligence interprets art</div>
+                            <div class="project-tags">Web Development</div>
+                        </div>
+                    </div>
+                    <div id="novel-art" class="project" onclick="updateSelected(this)">
+                        <div class="project-text">
+                            <h1 class="project-title">Text Visualizer</h1>
+                            <div class="project-description">Expressing color's representation in novels through automated pixel art</div>
+                            <div class="project-tags">Digital Humanities - Visualization</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-display"></div>
+        </div>
+    </section>
+    <section class="page" id="page-3">
+        <div class="illustration-content">
+            <div class="illustration-carousel">
+
+                <div class="illustration" id="illustration-1">
+                    <div class="page-title">Illustrations</div>
+
+                    <img loading="lazy" class="illustration-img" alt="Harvard Lampoon Issue Cover" src="assets/illustrations/travel-guide.jpeg"/>
+                    <div class="illustration-text">
+                        <h1 class="project-title">Harvard Lampoon Issue Cover</h1>
+                        <div class="project-description">
+                            The Summer 2019 cover illustration for the oldest comedy magazine in the country
+                        </div>
+                    </div>
+                </div>
+                <div class="illustration" id="illustration-2">
+                    <img loading="lazy" class="illustration-img" alt="Hasty Pudding Theatricals Show Poster" src="assets/illustrations/mean-ghouls.jpeg"/>
+                    <div class="illustration-text">
+                        <h1 class="project-title">Hasty Pudding Theatricals Poster</h1>
+                        <div class="project-description">
+                            The 2020 show poster for the oldest theatrical group in the country
+                        </div>
+                    </div>
+                </div>
+                <div class="illustration" id="illustration-3">
+                    <img loading="lazy" class="illustration-img" alt="Abstract Painting - Untitled 2020" src="assets/art/painting3.png" />
+                    <div class="illustration-text">
+                        <h1 class="project-title">Untitled</h1>
+                        <div class="project-description">
+                            Acrylic on canvas. 30 x 40 in.
+                        </div>
+                    </div>
+                </div>
+                <div class="illustration" id="illustration-4">
+                    <img loading="lazy" class="illustration-img" alt="Abstract Painting - Untitled 2020" src="assets/art/painting2.png" />
+                    <div class="illustration-text">
+                        <h1 class="project-title">Untitled</h1>
+                        <div class="project-description">
+                            Acrylic on canvas. 16 x 40 in.
+                        </div>
+                    </div>
+                </div>
+                <div class="illustration" id="illustration-5">
+                    <img loading="lazy" class="illustration-img" alt="Abstract Painting - Untitled 2020" src="assets/art/painting-1.png" />
+                    <div class="illustration-text">
+                        <h1 class="project-title">Untitled</h1>
+                        <div class="project-description">
+                            Acrylic on canvas. 16 x 40 in.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page" id="page-4">
+        <div class="about-me">
+            <div class="about-me-grid">
+                <div class="about-me-photo-container">
+                    <img class="about-me-photo" src="assets/marie.jpg"/>
+                </div>
+                <div class="about-me-title">
+                    <h2>About</h2>
+                    <h1>Marie Konopacki</h1>
+                </div>
+                <div class="about-me-text">
+                    <p>I'm a senior at Harvard University studying Art, Film, & Visual Studies, with a secondary in Computer Science. As an artist, coder, and designer, I'm interested in how people interact with what they use every day, and I seek to foster inclusion through design.</p>
+                    <p>Throughout my life, I've witnessed most of my family—none of whom have gone to college and most of whom do not speak English—struggle with using things not designed for them, which has led to my desire to focus on accessibility and diversity when creating.</p>
+                    <div class="buttons">
+                        <a href="mailto:konopackimarie@gmail.com" class="button" target="_blank">Email</a>
+                        <a href="https://www.linkedin.com/in/mariekonopacki/" class="button" target="_blank">LinkedIn</a>
+                        <a href="https://drive.google.com/file/d/0B2OApd_3IBgvMlktMUlsNmhZN3c/view?usp=sharing" class="button" target="_blank">Resume</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+<script src="js/DrawSVGPlugin.min.js"></script>
+<script src="js/MorphSVGPlugin.min.js"></script>
+<script src="js/TextPlugin.min.js"></script>
+<script src="js/GSDevTools.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.4/pdfobject.min.js" integrity="sha512-mW7siBAOOJTkMl77cTke1Krn+Wz8DJrjMzlKaorrGeGecq0DPUq28KgMrX060xQQOGjcl7MSSep+/1FOprNltw==" crossorigin="anonymous"></script>
+<script src="projectDescriptions.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
