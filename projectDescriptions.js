@@ -2,7 +2,7 @@
 var olympics = `
                 <div class="project-image" id="header-image" style="--image-url:url('./assets/olympics/web-banner.png')"></div>
                 <div class="display-section" >
-                    <h2 class="display-date">Fall 2020 -</h2>
+                    <h2 class="display-date">Fall 2020</h2>
                     <h2 class="section-title">Visualizing Accessibility in the Olympics</h2>
                 </div>
                 <div class="display-section">
@@ -12,9 +12,18 @@ var olympics = `
                         Using data we found, we pinpointed relationships that allowed us to then ideate and unfold complex visualizations to demonstrate informative trends.</p>
                 </div>
                 <div class="display-section">
+                    <div class="project-buttons">
+                        <a href="https://github.com/nicolearaya/Olympics" class="project-button" target="_blank">Github repo</a>
+                        <a href="https://nicolearaya.github.io/Olympics/#1" class="project-button" target="_blank">Visit website</a>
+                    </div>       
+                </div>
+                <div class="display-section">
                     <h2 class="section-title">Responsibilities</h2>
                     <p>The three of us each designed and developed several interactive D3 visualizations after writing Javascript programs to access and prepare our data for processing. As the team leader, I also guided our ideas into a cohesive vision in our discussions, structured our timeline and specific goals, and designed the overall appearance of our website while also making sure all of our individual visualizations fit into its theme. </p>
                 </div>
+                <div class="display-section">
+                    <img class="project-inline-image" src="./assets/olympics/sketches.png"/>
+                </div>                
                 <div class="display-section">
                     <h2 class="section-title">The Data</h2>
                     <p>We were able to find data of athletes’ physical attributes, hometowns, sport, and medals they won if applicable. We also found data detailing country representation at each game both by athletes sent to compete and medals actually won. To supplement and give context to our data, we additionally located country GDPs over time as well as average income by hometown. We also found the results of a 538 survey that polled US citizens to find the most popular Olympic sport. </p>
@@ -24,18 +33,36 @@ var olympics = `
                     <p>Initially, we identified trends in Tableau, which allowed us to quickly determine the points of our story before we actually dove into programming these visualizations from scratch. Then, using Javascript, we individually created programs accessing data from different sources and processing it into a form D3, a Javascript library for creating visualizations, could interpret. We then created rudimentary graphs that we used to conduct user testing. </p>
                 </div>
                 <div class="display-section">
-                    <h2 class="section-title">User Research</h2>
+                    <img class="project-inline-image" src="./assets/olympics/jamboard.png"/>
+                </div>
+                <div class="display-section">
+                    <h2 class="section-title">User Feedback</h2>
                     <p>After building our initial prototype, we conducted interviews to get feedback on our UI and overall flow of the story. We interviewed 3 students, which we found ideal as they were our target audience, and we wanted this information to be, well, accessible! From our testing, we were able to spot and correct interactions and reorder some of the visualizations.</p>
+                    <p>Actionables:</p>
+                    <ul>
+                        <li>Add one sentence summaries of findings for each visualization</li>
+                        <li>Make hover interactions more clear</li>
+                        <li>Ensure graph keys are more defined</li>
+                    </ul>
                 </div>
                 <div class="display-section">
                     <h2 class="section-title">Design</h2>
                     <p>After iterating through prototypes, we landed on a framework with which we were very happy. From there, I started building cohesion between our visualizations through design. Inspired by the nighttime ceremonies of the Olympics, I went with a darker color palette which also emphasized the data within our graphs. </p>
+                </div>
+                 <div class="display-section">
+                    <img class="project-inline-image" src="./assets/olympics/homepage-animation.gif"/>
                 </div>
                 <div class="display-section">
                     <h2 class="section-title">The Story</h2>
                     <p>Although not many people can compare themselves to Olympic athletes, we wanted this data to be personal and relatable. We decided to begin our story by asking you to input your own age, gender, height and weight, so you could see what sport you might play if you just so happened to be a world-class athlete. This then segues into a dashboard I created demonstrating the physical attributes of athletes by sport. Following this, the user is then presented with the hometowns of US athletes, which precedes a set of visualizations that analyze the average household income of these hometowns relative to the national median. </p>
                     <p>Then, taking a step back, we took a look at country data. Inspired by Hans Rosling’s famous 200 Years in 4 minutes presentation, I sought to create my own version by looking at countries’ GDPs compared to the amount of medals they win and animating these trends over time. The findings are striking: in the 1980s, we see non-Western countries become increasingly competitive as their GDPs also rise. In our next visualization, we found that countries that are hosting the games that year have an undeniable advantage.</p>
                     <p>We then compiled all of our prior findings into a relative scale. Which sports in the Olympics are most accessible? Meaning, which sports have a wider range of athlete physical traits, a more equal male to female ratio, and the range of countries who win medals in that sport. We found that Track and Field won. Taking this new data a step further, I took the survey results of popularity to see if there’s a correlation between a sport’s accessibility and its favorability. In the end, we found that the more accessible sports tend to be the most popular.</p>
+                </div>
+                <div class="display-section">
+                    <div class="project-buttons">
+                        <a href="https://github.com/nicolearaya/Olympics" class="project-button" target="_blank">Github Repo</a>
+                        <a href="https://nicolearaya.github.io/Olympics/#1" class="project-button" target="_blank">Visit website</a>
+                    </div>       
                 </div>
                 `
 

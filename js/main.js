@@ -41,7 +41,7 @@ function loadAnimation() {
 
     const loading = gsap.timeline()
     loading.add('start')
-    loading.fromTo(".background-overlay", {scaleX: 1.1, rotation: 0.01, duration: 0}, {scaleX: 1, rotation: 0.01, duration: 1, ease:"power2.out"}, 'start')
+    loading.fromTo(".background-overlay", {scaleX: 1.1, duration: 0}, {scaleX: 1, duration: 1, ease:"power2.out"}, 'start')
     loading.from(".blob", {scale: 0, delay: .1, autoAlpha: 0, rotation: 0.01, force3D:true, stagger: .2, duration: 1.5, ease:"power2.out"}, 'start')
     loading.from('.line', {drawSVG:'0%', delay: .4, duration: .7, stagger: 0.1, ease:"Power2.easeInOut"}, 'start')
     loading.then(toTwo())
@@ -66,7 +66,7 @@ function loadAnimation() {
         homepage.from('.project-display', {y: '100%', duration: 2, delay: 1.5}, 'start')
         homepage.to(".homepage-content", {delay: .5, duration: 1.5, y: -2000, rotation: 0.01, force3D:true}, 'start')
         homepage.to(".line", {keyframes:[{drawSVG: 0, stroke: 'var(--accent)', duration: .3, force3D:true, stagger: -.1}, {autoAlpha: 0}]}, 'start')
-        homepage.fromTo(".background-overlay", {scaleX: 1, duration: 0, rotation:0.001}, {scaleX: 0, delay: 1, duration: 2, rotation:0.001}, 'start')
+        homepage.fromTo(".background-overlay", {scaleX: 1, duration: 0}, {scaleX: 0, delay: 1, duration: 2, rotation:0.001}, 'start')
         homepage.to("#overlay-color-rect", { delay: 1, duration: .3}, 'start')
         homepage.to(".down-arrow", {delay: .2, duration: 1, x: "-100vw"}, 'start')
         homepage.to(".blob", {keyframes:[{scale: 0.01, stagger: .08, duration: .3}, {autoAlpha: 0}]}, 'start')
