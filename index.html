@@ -6,9 +6,21 @@
     <title>Marie Konopacki</title>
     <link rel="stylesheet" href="style2.css">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134569854-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-134569854-2');
+    </script>
+
 </head>
 <body>
 
+<!-- Fancy seeing you here! All of this code was written by me, with love. <3 -->
 
 <div class="animated-background">
     <div class="blobs">
@@ -59,7 +71,6 @@
 </div>
 
 <div class="page-scroll">
-    <!--  Homepage  -->
     <section class="page" id="page-1">
         <div class="homepage-content">
             <div class="greeting"><span>Hello!</span></div>
@@ -80,9 +91,9 @@
     <section class="page" id="page-2">
         <div class="project-grid">
             <div class="list-wrapper">
-                <div class="page-title project-page-title">Projects</div>
+                <div class="page-title project-page-title">Projects</br></div>
                 <div class="project-list">
-                    <div id="olympics" class="project selected" onclick="updateSelected(this)">
+                    <div id="olympics" class="project" onclick="updateSelected(this)">
                         <div class="project-text">
                             <h1 class="project-title">Accessibility of the Olympics</h1>
                             <div class="project-description">Analysis of diversity and inequality of athletes and their countries over time</div>
@@ -140,7 +151,8 @@
                     </div>
                 </div>
                 <div class="illustration" id="illustration-3">
-                    <img loading="lazy" class="illustration-img" alt="Abstract Painting - Untitled 2020" src="assets/art/painting3.png" />
+                    <img loading="lazy" class="illustration-img unrotated" alt="Abstract Painting - Untitled 2020" src="assets/art/painting3.png" />
+                    <img loading="lazy" class="illustration-img rotated" alt="Abstract Painting - Untitled 2020" src="assets/art/painting3-rotated.png" />
                     <div class="illustration-text">
                         <h1 class="project-title">Untitled</h1>
                         <div class="project-description">
@@ -149,7 +161,8 @@
                     </div>
                 </div>
                 <div class="illustration" id="illustration-4">
-                    <img loading="lazy" class="illustration-img" alt="Abstract Painting - Untitled 2020" src="assets/art/painting2.png" />
+                    <img loading="lazy" class="illustration-img unrotated" alt="Abstract Painting - Untitled 2020" src="assets/art/painting2.png" />
+                    <img loading="lazy" class="illustration-img rotated" alt="Abstract Painting - Untitled 2020" src="assets/art/painting2-rotated.png" />
                     <div class="illustration-text">
                         <h1 class="project-title">Untitled</h1>
                         <div class="project-description">
@@ -158,7 +171,8 @@
                     </div>
                 </div>
                 <div class="illustration" id="illustration-5">
-                    <img loading="lazy" class="illustration-img" alt="Abstract Painting - Untitled 2020" src="assets/art/painting-1.png" />
+                    <img loading="lazy" class="illustration-img unrotated" alt="Abstract Painting - Untitled 2020" src="assets/art/painting-1.png" />
+                    <img loading="lazy" class="illustration-img rotated" alt="Abstract Painting - Untitled 2020" src="assets/art/painting1-rotated.png" />
                     <div class="illustration-text">
                         <h1 class="project-title">Untitled</h1>
                         <div class="project-description">
@@ -202,7 +216,6 @@
 <script src="js/DrawSVGPlugin.min.js"></script>
 <script src="js/MorphSVGPlugin.min.js"></script>
 <script src="js/TextPlugin.min.js"></script>
-<script src="js/GSDevTools.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.4/pdfobject.min.js" integrity="sha512-mW7siBAOOJTkMl77cTke1Krn+Wz8DJrjMzlKaorrGeGecq0DPUq28KgMrX060xQQOGjcl7MSSep+/1FOprNltw==" crossorigin="anonymous"></script>

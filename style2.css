@@ -738,10 +738,251 @@ a:hover {
     height: 100%;
 }
 
+.rotated {
+    display: none;
+}
 
-/*@media only screen and (max-width: 600px) {*/
-/*    .animated-background {*/
-/*        transform: rotate(-90deg)scaleX(1.4);*/
 
-/*    }*/
-/*}*/
+@media only screen and (max-width: 800px) {
+    .animated-background {
+        display: none;
+    }
+
+    .down-arrow {
+        display: none;
+    }
+
+    .blobs {
+        width: 100vw;
+        height: 30vh;
+        left: 0;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .page-scroll {
+        scroll-snap-type: none;
+    }
+
+    #page-1 {
+        background-color: var(--homepage)
+    }
+
+    #page-2 {
+        height: unset;
+    }
+
+    body {
+        background-color: var(--homepage)
+    }
+
+    .homepage-content {
+        padding: 0;
+        width: 88%;
+        left: 6vw;
+    }
+
+    .greeting {
+        font-size: min(11vw, 50px);
+    }
+
+    .marie {
+        margin-top: 2vw;
+        font-size: min(12vw, 60px);
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .description p {
+        font-size: min(4vw, 19px);
+
+    }
+
+    .button {
+        font-size: min(4vw, 19px);
+    }
+
+    .project-grid {
+        position: static;
+        height: unset;
+        grid-template-columns: 100%;
+
+    }
+
+    .project-list {
+        height: unset;
+    }
+
+    .list-wrapper {
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 5vh;
+
+    }
+
+    .project-list {
+        width: 88%;
+        margin: 0 auto;
+    }
+
+
+    .project {
+        height: unset;
+        border-top: unset;
+        /*border: 1px solid var(--darkhomepage);*/
+        margin: 8px 0;
+        padding: 15px 0;
+        background-color: var(--homepage);
+        box-shadow: 0 1px 2px rgba(32, 50, 43,.15),
+        0 2px 4px rgba(32, 50, 43,.15),
+        0 4px 8px rgba(32, 50, 43,.15),
+        0 8px 16px rgba(32, 50, 43,.15);
+        filter: brightness(1.05)
+    }
+
+    .project-display {
+        display: none;
+    }
+
+    .project-page-title {
+        margin-bottom: 3vh;
+        line-height: 1.4;
+    }
+
+    .project-page-title:after {
+        content: 'For project details, please view on a larger screen.';
+        color: var(--offwhite);
+        font-size: min(4vw, 19px);
+        font-weight: 400;
+        max-width: 90vw;
+    }
+
+    .project-text {
+        width: 90%;
+    }
+
+    .project-title {
+        font-size: min(5vw, 22px);
+    }
+
+    .project-description {
+        font-size: min(4vw, 19px);
+    }
+
+    .project-tags {
+        font-size: min(4vw, 19px);
+    }
+
+    .project:after {
+        content: '';
+        display: none;
+
+    }
+
+    .selected:after {
+        content: '-';
+    }
+
+    .page-title {
+        font-size: min(6vw, 25px);
+        margin-left: 6vw;
+    }
+
+    #page-3 {
+        background-color: var(--homepage);
+        height: unset;
+    }
+
+    .illustration-img {
+        box-shadow: 0 1px 2px rgba(32, 50, 43,.15),
+        0 2px 4px rgba(32, 50, 43,.15),
+        0 4px 8px rgba(32, 50, 43,.15),
+        0 8px 16px rgba(32, 50, 43,.15),
+        0 16px 32px rgba(32, 50, 43,.15)
+    }
+
+    .unrotated {
+        display: none;
+    }
+
+    .rotated {
+        display: block;
+    }
+
+    .illustration-carousel {
+        flex-wrap: wrap;
+        margin-top: 15vh;
+        width: calc(88vw + 20px);
+    }
+
+    #illustration-1:hover, #illustration-2:hover, #illustration-3:hover, #illustration-4:hover, #illustration-5:hover {
+        flex-grow: 1;
+    }
+
+    .illustration:hover > .illustration-text {
+        opacity: 0;
+    }
+
+    #illustration-3 {
+        flex: unset;
+        max-height: 88vw;
+        max-width: 88vw;
+    }
+
+    #illustration-4 {
+        flex: unset;
+    }
+
+    #illustration-5 {
+        flex: unset;
+    }
+
+    .about-me-grid {
+        width: 88%;
+        display: block;
+        margin-left: 6vw;
+    }
+
+    .about-me-title h2 {
+        font-size: min(8vw, 30px);
+    }
+
+    .about-me-title h1 {
+        font-size: min(10vw, 40px);
+    }
+
+    .about-me-text p {
+        font-size: min(4vw, 19px);
+    }
+
+    .about-me-text {
+        width: 100%;
+    }
+
+    .about-me-photo-container {
+        box-shadow: 0 1px 2px rgba(32, 50, 43,.15),
+        0 2px 4px rgba(32, 50, 43,.15),
+        0 4px 8px rgba(32, 50, 43,.15),
+        0 8px 16px rgba(32, 50, 43,.15),
+        0 16px 32px rgba(32, 50, 43,.15);
+        width: 30vw;
+        height: 30vw;
+        margin-right: auto;
+        margin-bottom: 5vh;
+
+    }
+
+    #page-4 {
+        height: unset;
+        padding: 5vh 0;
+    }
+
+    .about-me {
+        height: unset;
+        padding-top: 5vh;
+    }
+}

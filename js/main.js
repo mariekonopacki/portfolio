@@ -2,6 +2,12 @@
 var h = $(window).height();
 var w = $(window).width();
 
+var blobH = $('.blobs').height();
+var blobW = $('.blobs').width();
+
+console.log(blobH)
+console.log(blobW)
+
 gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(CSSPlugin);
 gsap.registerPlugin(DrawSVGPlugin);
@@ -16,8 +22,13 @@ animationarray = [];
 
 $(window).on("load", function(){
 
-    loadAnimation();
-    createBlobs();
+    if (w > 800) {
+        $('#olympics').addClass('selected');
+        loadProjectDisplay();
+
+        loadAnimation();
+        createBlobs();
+    }
 
 });
 
@@ -33,7 +44,6 @@ function createBlobs() {
 
 
 function loadAnimation() {
-
     $('.lines').css('visibility', 'visible')
     $('.blob-overlay').css('visibility', 'visible')
 
@@ -111,15 +121,13 @@ function loadAnimation() {
         about.to(".blob", {keyframes:[{scale: 1}, {autoAlpha: 1}]}, 'start')
         about.to(".blobs", {autoAlpha: 1, duration: 1, delay: 1}, 'start')
     }
-
-
 }
 
 function animateBlob(blob) {
 
     // Create random points for blob path
     var newData = d3.range(3).map(function(){
-        return [Math.floor(Math.random() * (w * .4)), Math.floor(Math.random() * h)]
+        return [Math.floor(Math.random() * (blobW)), Math.floor(Math.random() * blobH)]
     });
 
     // Generate a curved path for smooth blob moving
@@ -165,8 +173,18 @@ function loadProjectDisplay() {
 }
 
 function updateSelected(element) {
-    $('.selected').removeClass('selected')
-    $(element).addClass('selected')
+    if (w < 800) {
+        if ($(element).hasClass('selected')) {
+            $(element).removeClass('selected')
+        } else {
+            $('.selected').removeClass('selected')
+            $(element).addClass('selected')
+        }
+    } else {
+        $('.selected').removeClass('selected')
+        $(element).addClass('selected')
+    }
+
 
     loadProjectDisplay();
 

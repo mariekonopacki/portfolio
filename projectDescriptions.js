@@ -73,14 +73,14 @@ var fashion = `<div class="project-image" id="header-image" style="--image-url:u
                 </div>
             </div>
             <div class="display-section">
-                <p>Scholarship-winning proposal of sustainable clothing made affordable by bundling foundation pieces</p>
+                <p>Over a month, I researched how Gen Z interacts with fashion and used this new knowledge of purchase drivers in order to develop a fashion line. I then designed a slide deck that outlines my business proposal, research, interview results, clothing designs, and overall marketing campaign. For this case study, I won a scholarship through the Fashion Scholarship Fund.</p>
             </div>
             <div class="display-section">
                 <h2 class="section-title">Objective</h2>
                 <p>Each year, the Fashion Scholarship Fund competition prompts students to propose a fashion line through a fifteen page slide deck. For 2020, applicants had to develop a line of fashion products that would appeal to Gen Z consumers, based on what the student identified as key purchase drivers.</p>
             </div>
             <div class="display-section">
-                <h2 class="section-title">The Problem</h2>
+                <h2 class="section-title">Identified Problem</h2>
                 <p>Gen Z is a generation uniquely in tune with the social issues of today such as environmental impact and sustainability. But after online research and interviews with 18 of my peers, I found that young people actually consider affordability the most important factor when purchasing clothing. This means questionable fast fashion stores like Forever 21 remain popular for their low prices, even if pricier sustainable clothing is the more desirable option.</p>
             </div>
             <div class="display-section">
