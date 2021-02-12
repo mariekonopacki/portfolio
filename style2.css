@@ -742,11 +742,38 @@ a:hover {
     display: none;
 }
 
+.mobile-lines {
+    display: none;
+}
+
 
 @media only screen and (max-width: 800px) {
     .animated-background {
         display: none;
     }
+
+    .mobile-lines {
+        position: absolute;
+        height: 50vh;
+        width: 100vw;
+        display: block;
+        z-index: 300;
+        object-fit: cover;
+        object-position: right bottom;
+    }
+
+    .mobile-lines {
+        position: absolute;
+    }
+
+    .mobile-lines path {
+        stroke: var(--accent);
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .4;
+    }
+
 
     .down-arrow {
         display: none;
@@ -767,7 +794,8 @@ a:hover {
     }
 
     #page-1 {
-        background-color: var(--homepage)
+        background-color: var(--homepage);
+        position: relative;
     }
 
     #page-2 {
@@ -785,12 +813,12 @@ a:hover {
     }
 
     .greeting {
-        font-size: min(11vw, 50px);
+        font-size: min(11vw, 45px);
     }
 
     .marie {
         margin-top: 2vw;
-        font-size: min(12vw, 60px);
+        font-size: min(12vw, 50px);
     }
 
     .description {
@@ -798,12 +826,12 @@ a:hover {
     }
 
     .description p {
-        font-size: min(4vw, 19px);
+        font-size: min(3.8vw, 18px);
 
     }
 
     .button {
-        font-size: min(4vw, 19px);
+        font-size: min(4vw, 18px);
     }
 
     .project-grid {
