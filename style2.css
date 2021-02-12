@@ -835,6 +835,10 @@ a:hover {
 
     }
 
+    .buttons {
+        margin-bottom: 5vh;
+    }
+
     .button {
         font-size: min(4vw, 18px);
     }
