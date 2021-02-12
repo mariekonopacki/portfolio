@@ -772,7 +772,7 @@ a:hover {
     }
 
     .mobile-lines path {
-        stroke: var(--accent);
+        stroke: #4FFFC7;
         fill: none;
         stroke-linecap: round;
         stroke-linejoin: round;
